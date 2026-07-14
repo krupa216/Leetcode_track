@@ -1,0 +1,7 @@
+// Last updated: 7/14/2026, 2:03:48 PM
+class Solution {
+    public int findMin(int[] nums) {
+        Arrays.sort(nums);
+        return nums[0];
+    }
+}

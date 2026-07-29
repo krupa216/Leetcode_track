@@ -1,4 +1,4 @@
-// Last updated: 7/29/2026, 11:50:56 AM
+// Last updated: 7/29/2026, 11:55:01 AM
 1class Solution {
 2    public int findMaxLength(int[] nums) {
 3        for(int i=0;i<nums.length;i++)

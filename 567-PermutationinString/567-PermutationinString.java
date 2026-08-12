@@ -1,4 +1,4 @@
-// Last updated: 8/12/2026, 2:08:10 PM
+// Last updated: 8/12/2026, 2:08:37 PM
 1class Solution {
 2    public boolean checkInclusion(String s1, String s2) {
 3        int n=s1.length();

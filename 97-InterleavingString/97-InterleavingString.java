@@ -1,22 +1,26 @@
-// Last updated: 9/11/2026, 11:54:04 AM
+// Last updated: 9/11/2026, 12:02:38 PM
 1class Solution {
-2    public int totalFruit(int[] f) {
-3      Map<Integer, Integer> b=new HashMap<>();
-4      int j=0;
-5      int i=0;
-6      int res=0;
-7      for(i=0;i<f.length;i++)
-8      {
-9        b.put(f[i],b.getOrDefault(f[i],0)+1);
-10        while(b.size()>2)
-11        {
-12            b.put(f[j],b.get(f[j])-1);
-13            b.remove(f[j],0);
-14            j++;
-15        }
-16        res=Math.max(res,i-j+1);
-17      } 
-18      return res;
-19
-20    }
-21}
+2    public int longestOnes(int[] nums, int k) {
+3        int z=0;
+4        int s=0;
+5        int max=0;
+6        for(int i=0;i<nums.length;i++)
+7        {
+8            if(nums[i]==0)
+9            {
+10                z++;
+11            }
+12            while(z>k)
+13            {
+14                if(nums[s]==0)
+15                {
+16                    z--;
+17                  
+18                }
+19                  s++;
+20            }
+21           max=Math.max(max,i-s+1);
+22        }
+23        return max;
+24    }
+25}
